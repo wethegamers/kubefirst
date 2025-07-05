@@ -1,0 +1,35 @@
+cloudProvider: civo
+civoAPIKey: "test-key"
+clusterRegion: LON1
+
+dnsProvider: civo
+domainName: example.com
+subdomain: k8s
+
+gitProvider: github
+gitUser: your-username
+gitPAT: "test-token"
+gitRepo: your-repo
+
+clusterName: talos-test
+alertsEmail: alerts@example.com
+talosVersion: v1.7.0
+kubernetesVersion: v1.30.0
+controlplaneNodeCount: 3
+controlplaneNodeSize: g4s.kube.medium
+workerNodeCount: 3
+workerNodeSize: g4s.kube.medium
+
+enableCNI: true
+enableCSI: true
+enableIngress: true
+enableArgoCD: true
+enableVault: true
+enableTelemetry: false
+enableBackups: true
+enableMonitoring: true
+enableCertManager: true
+enableExternalDNS: true
+enableExternalSecrets: true
+enableKubefirst: true
+enableMetaphor: true

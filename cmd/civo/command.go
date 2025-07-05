@@ -39,7 +39,7 @@ func NewCommand() *cobra.Command {
 	}
 
 	// wire up new commands
-	civoCmd.AddCommand(BackupSSL(), Create(), Destroy(), Quota(), RootCredentials())
+	civoCmd.AddCommand(BackupSSL(), Create(), Destroy(), Quota(), RootCredentials(), TalosBootstrap())
 
 	return civoCmd
 }
