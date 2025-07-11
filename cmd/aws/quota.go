@@ -11,8 +11,8 @@ import (
 	"fmt"
 	"strings"
 
-	awsinternal "github.com/konstructio/kubefirst-api/pkg/aws"
-	"github.com/konstructio/kubefirst-api/pkg/reports"
+	awsinternal "github.com/wethegamers/kubefirst-api/pkg/aws"
+	"github.com/wethegamers/kubefirst-api/pkg/reports"
 	"github.com/spf13/cobra"
 )
 

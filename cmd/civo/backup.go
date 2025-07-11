@@ -10,9 +10,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/konstructio/kubefirst-api/pkg/providerConfigs"
-	"github.com/konstructio/kubefirst-api/pkg/ssl"
-	utils "github.com/konstructio/kubefirst-api/pkg/utils"
+	"github.com/wethegamers/kubefirst-api/pkg/providerConfigs"
+	"github.com/wethegamers/kubefirst-api/pkg/ssl"
+	utils "github.com/wethegamers/kubefirst-api/pkg/utils"
 	"github.com/rs/zerolog/log"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"

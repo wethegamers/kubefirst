@@ -9,13 +9,13 @@ package akamai
 import (
 	"fmt"
 
-	"github.com/konstructio/kubefirst-api/pkg/constants"
-	"github.com/konstructio/kubefirst/internal/catalog"
-	"github.com/konstructio/kubefirst/internal/cluster"
-	"github.com/konstructio/kubefirst/internal/common"
-	"github.com/konstructio/kubefirst/internal/provision"
-	"github.com/konstructio/kubefirst/internal/step"
-	"github.com/konstructio/kubefirst/internal/utilities"
+	"github.com/wethegamers/kubefirst-api/pkg/constants"
+	"github.com/wethegamers/kubefirst/internal/catalog"
+	"github.com/wethegamers/kubefirst/internal/cluster"
+	"github.com/wethegamers/kubefirst/internal/common"
+	"github.com/wethegamers/kubefirst/internal/provision"
+	"github.com/wethegamers/kubefirst/internal/step"
+	"github.com/wethegamers/kubefirst/internal/utilities"
 	"github.com/spf13/cobra"
 )
 

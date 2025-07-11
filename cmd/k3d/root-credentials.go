@@ -10,10 +10,10 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/konstructio/kubefirst-api/pkg/credentials"
-	"github.com/konstructio/kubefirst-api/pkg/k3d"
-	"github.com/konstructio/kubefirst-api/pkg/k8s"
-	"github.com/konstructio/kubefirst/internal/progress"
+	"github.com/wethegamers/kubefirst-api/pkg/credentials"
+	"github.com/wethegamers/kubefirst-api/pkg/k3d"
+	"github.com/wethegamers/kubefirst-api/pkg/k8s"
+	"github.com/wethegamers/kubefirst/internal/progress"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )

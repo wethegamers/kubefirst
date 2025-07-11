@@ -16,7 +16,7 @@ import (
 	"github.com/aws/aws-sdk-go-v2/service/ec2"
 	ec2Types "github.com/aws/aws-sdk-go-v2/service/ec2/types"
 	"github.com/aws/aws-sdk-go-v2/service/ssm"
-	internalssh "github.com/konstructio/kubefirst-api/pkg/ssh"
+	internalssh "github.com/wethegamers/kubefirst-api/pkg/ssh"
 	"github.com/rs/zerolog/log"
 )
 

@@ -7,8 +7,8 @@ See the LICENSE file for more details.
 package cmd
 
 import (
-	"github.com/konstructio/kubefirst-api/pkg/configs"
-	"github.com/konstructio/kubefirst/internal/step"
+	"github.com/wethegamers/kubefirst-api/pkg/configs"
+	"github.com/wethegamers/kubefirst/internal/step"
 	"github.com/spf13/cobra"
 )
 

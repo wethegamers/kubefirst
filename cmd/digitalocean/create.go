@@ -10,7 +10,7 @@ import (
 	"fmt"
 	"os"
 
-	internalssh "github.com/konstructio/kubefirst-api/pkg/ssh"
+	internalssh "github.com/wethegamers/kubefirst-api/pkg/ssh"
 	"github.com/rs/zerolog/log"
 )
 

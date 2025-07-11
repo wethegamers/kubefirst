@@ -10,8 +10,8 @@ import (
 	"encoding/base64"
 	"fmt"
 
-	"github.com/konstructio/kubefirst-api/pkg/gitlab"
-	"github.com/konstructio/kubefirst-api/pkg/k8s"
+	"github.com/wethegamers/kubefirst-api/pkg/gitlab"
+	"github.com/wethegamers/kubefirst-api/pkg/k8s"
 	v1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/errors"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

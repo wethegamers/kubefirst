@@ -15,12 +15,12 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/konstructio/kubefirst-api/pkg/configs"
-	"github.com/konstructio/kubefirst-api/pkg/providerConfigs"
-	"github.com/konstructio/kubefirst/internal/cluster"
-	"github.com/konstructio/kubefirst/internal/launch"
-	"github.com/konstructio/kubefirst/internal/progress"
-	"github.com/konstructio/kubefirst/internal/step"
+	"github.com/wethegamers/kubefirst-api/pkg/configs"
+	"github.com/wethegamers/kubefirst-api/pkg/providerConfigs"
+	"github.com/wethegamers/kubefirst/internal/cluster"
+	"github.com/wethegamers/kubefirst/internal/launch"
+	"github.com/wethegamers/kubefirst/internal/progress"
+	"github.com/wethegamers/kubefirst/internal/step"
 	"github.com/rs/zerolog/log"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
@@ -50,7 +50,7 @@ func CheckForVersionUpdate() {
 				case "darwin":
 					fmt.Printf("A newer version (v%s) is available! Please upgrade with: \"brew update && brew upgrade kubefirst\"\n", res.Current)
 				default:
-					fmt.Printf("A newer version (v%s) is available! \"https://github.com/konstructio/kubefirst/blob/main/build/README.md\"\n", res.Current)
+					fmt.Printf("A newer version (v%s) is available! \"https://github.com/wethegamers/kubefirst/blob/main/build/README.md\"\n", res.Current)
 				}
 			}
 		}
@@ -81,7 +81,7 @@ func versionCheck() (*CheckResponse, bool) {
 	}
 
 	bodyString := string(bodyBytes)
-	if !strings.Contains(bodyString, "url \"https://github.com/konstructio/kubefirst/archive/refs/tags/") {
+	if !strings.Contains(bodyString, "url \"https://github.com/wethegamers/kubefirst/archive/refs/tags/") {
 		fmt.Printf("checking for a newer version failed (no reference to kubefirst release) with: %s", err)
 		return nil, true
 	}

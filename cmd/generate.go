@@ -10,8 +10,8 @@ import (
 	"fmt"
 	"path/filepath"
 
-	"github.com/konstructio/kubefirst/internal/generate"
-	"github.com/konstructio/kubefirst/internal/step"
+	"github.com/wethegamers/kubefirst/internal/generate"
+	"github.com/wethegamers/kubefirst/internal/step"
 	"github.com/spf13/cobra"
 )
 

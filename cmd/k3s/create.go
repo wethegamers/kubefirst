@@ -11,7 +11,7 @@ import (
 
 	"github.com/rs/zerolog/log"
 
-	internalssh "github.com/konstructio/kubefirst-api/pkg/ssh"
+	internalssh "github.com/wethegamers/kubefirst-api/pkg/ssh"
 	_ "k8s.io/client-go/plugin/pkg/client/auth" // required for k8s authentication
 )
 

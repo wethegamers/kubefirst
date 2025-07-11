@@ -9,8 +9,8 @@ package cmd
 import (
 	"fmt"
 
-	"github.com/konstructio/kubefirst-api/pkg/certificates"
-	"github.com/konstructio/kubefirst/internal/step"
+	"github.com/wethegamers/kubefirst-api/pkg/certificates"
+	"github.com/wethegamers/kubefirst/internal/step"
 	"github.com/spf13/cobra"
 )
 

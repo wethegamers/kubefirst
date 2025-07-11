@@ -10,7 +10,7 @@ import (
 	"fmt"
 
 	tea "github.com/charmbracelet/bubbletea"
-	"github.com/konstructio/kubefirst-api/pkg/types"
+	"github.com/wethegamers/kubefirst-api/pkg/types"
 	"github.com/spf13/viper"
 )
 

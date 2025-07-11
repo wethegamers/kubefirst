@@ -10,7 +10,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/konstructio/kubefirst/internal/types"
+	"github.com/wethegamers/kubefirst/internal/types"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )

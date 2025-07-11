@@ -3,8 +3,8 @@ package provision
 import (
 	"testing"
 
-	apiTypes "github.com/konstructio/kubefirst-api/pkg/types"
-	"github.com/konstructio/kubefirst/internal/cluster"
+	apiTypes "github.com/wethegamers/kubefirst-api/pkg/types"
+	"github.com/wethegamers/kubefirst/internal/cluster"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

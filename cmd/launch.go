@@ -11,9 +11,9 @@ import (
 	"fmt"
 	"text/tabwriter"
 
-	"github.com/konstructio/kubefirst/internal/cluster"
-	"github.com/konstructio/kubefirst/internal/launch"
-	"github.com/konstructio/kubefirst/internal/step"
+	"github.com/wethegamers/kubefirst/internal/cluster"
+	"github.com/wethegamers/kubefirst/internal/launch"
+	"github.com/wethegamers/kubefirst/internal/step"
 	"github.com/spf13/cobra"
 )
 

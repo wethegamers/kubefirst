@@ -4,8 +4,8 @@ import (
 	"errors"
 	"fmt"
 
-	apiTypes "github.com/konstructio/kubefirst-api/pkg/types"
-	"github.com/konstructio/kubefirst/internal/cluster"
+	apiTypes "github.com/wethegamers/kubefirst-api/pkg/types"
+	"github.com/wethegamers/kubefirst/internal/cluster"
 )
 
 const (

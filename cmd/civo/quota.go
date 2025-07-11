@@ -17,7 +17,7 @@ import (
 
 	"github.com/civo/civogo"
 	"github.com/fatih/color"
-	"github.com/konstructio/kubefirst-api/pkg/reports"
+	"github.com/wethegamers/kubefirst-api/pkg/reports"
 	"github.com/rs/zerolog/log"
 	"github.com/spf13/cobra"
 )

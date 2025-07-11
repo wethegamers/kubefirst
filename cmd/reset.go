@@ -11,8 +11,8 @@ import (
 	"os"
 	"time"
 
-	utils "github.com/konstructio/kubefirst-api/pkg/utils"
-	"github.com/konstructio/kubefirst/internal/step"
+	utils "github.com/wethegamers/kubefirst-api/pkg/utils"
+	"github.com/wethegamers/kubefirst/internal/step"
 	"github.com/rs/zerolog/log"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
