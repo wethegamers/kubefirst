@@ -38,7 +38,10 @@ require (
 	k8s.io/client-go v11.0.1-0.20190816222228-6d55c1b1f1ca+incompatible
 )
 
-require github.com/tj/go-spin v1.1.0 // indirect
+require (
+	github.com/tj/go-spin v1.1.0 // indirect
+	github.com/wethegamers/metrics-client v0.3.0 // indirect
+)
 
 require (
 	cel.dev/expr v0.16.1 // indirect
