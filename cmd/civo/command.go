@@ -126,7 +126,7 @@ func Create() *cobra.Command {
 	createCmd.Flags().String("github-org", "", "The GitHub organization for the new GitOps and Metaphor repositories - required if using GitHub")
 	createCmd.Flags().String("gitlab-group", "", "The GitLab group for the new GitOps and Metaphor projects - required if using GitLab")
 	createCmd.Flags().String("gitops-template-branch", "", "The branch to clone for the gitops-template repository")
-	createCmd.Flags().String("gitops-template-url", "https://github.com/konstructio/gitops-template.git", "The fully qualified URL to the gitops-template repository to clone")
+	createCmd.Flags().String("gitops-template-url", "https://github.com/wethegamers/gitops-template.git", "The fully qualified URL to the gitops-template repository to clone")
 	createCmd.Flags().String("install-catalog-apps", "", "Comma separated values to install after provision")
 	createCmd.Flags().Bool("use-telemetry", true, "Whether to emit telemetry")
 	createCmd.Flags().Bool("install-kubefirst-pro", true, "Whether or not to install Kubefirst Pro")

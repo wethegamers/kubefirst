@@ -74,6 +74,7 @@ func CreateClusterRecordFromRaw(
 		DomainName:             domainName,
 		ClusterID:              viper.GetString("kubefirst.cluster-id"),
 		ClusterType:            "mgmt",
+		KubernetesDistribution: viper.GetString("flags.kubernetes-distribution"),
 		GitopsTemplateURL:      gitopsTemplateURL,
 		GitopsTemplateBranch:   gitopsTemplateBranch,
 		GitProvider:            gitProvider,
