@@ -14,12 +14,12 @@ import (
 	"strconv"
 	"time"
 
+	"github.com/rs/zerolog/log"
+	"github.com/spf13/viper"
 	"github.com/wethegamers/kubefirst-api/pkg/configs"
 	"github.com/wethegamers/kubefirst-api/pkg/k8s"
 	apiTypes "github.com/wethegamers/kubefirst-api/pkg/types"
 	"github.com/wethegamers/kubefirst/internal/types"
-	"github.com/rs/zerolog/log"
-	"github.com/spf13/viper"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	v1secret "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
@@ -160,6 +160,7 @@ func CreateClusterDefinitionRecordFromRaw(gitAuth apiTypes.GitAuth, cliFlags typ
 		Type:                   "mgmt",
 		NodeType:               cliFlags.NodeType,
 		NodeCount:              stringToIntNodeCount,
+		KubernetesDistribution: cliFlags.KubernetesDistribution,
 		GitopsTemplateURL:      cliFlags.GitopsTemplateURL,
 		GitopsTemplateBranch:   cliFlags.GitopsTemplateBranch,
 		GitProvider:            gitProvider,

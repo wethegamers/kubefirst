@@ -10,9 +10,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/wethegamers/kubefirst/internal/types"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
+	"github.com/wethegamers/kubefirst/internal/types"
 )
 
 func GetFlags(cmd *cobra.Command, cloudProvider string) (*types.CliFlags, error) {
@@ -23,18 +23,20 @@ func GetFlags(cmd *cobra.Command, cloudProvider string) (*types.CliFlags, error)
 		alertsEmailFlag, cloudRegionFlag, dnsProviderFlag, subdomainFlag, domainNameFlag      string
 		nodeTypeFlag, nodeCountFlag, installCatalogAppsFlag, gitProviderFlag, gitProtocolFlag string
 		gitopsTemplateURLFlag, gitopsTemplateBranchFlag, githubOrgFlag, gitlabGroupFlag       string
+		kubernetesDistributionFlag                                                            string
 		installKubefirstProFlag                                                               bool
 	)
 
 	flags := map[string]*string{
-		"cluster-name":           &cliFlags.ClusterName,
-		"github-org":             &githubOrgFlag,
-		"gitlab-group":           &gitlabGroupFlag,
-		"git-provider":           &gitProviderFlag,
-		"git-protocol":           &gitProtocolFlag,
-		"gitops-template-url":    &gitopsTemplateURLFlag,
-		"gitops-template-branch": &gitopsTemplateBranchFlag,
-		"install-catalog-apps":   &installCatalogAppsFlag,
+		"cluster-name":             &cliFlags.ClusterName,
+		"github-org":               &githubOrgFlag,
+		"gitlab-group":             &gitlabGroupFlag,
+		"git-provider":             &gitProviderFlag,
+		"git-protocol":             &gitProtocolFlag,
+		"gitops-template-url":      &gitopsTemplateURLFlag,
+		"gitops-template-branch":   &gitopsTemplateBranchFlag,
+		"install-catalog-apps":     &installCatalogAppsFlag,
+		"kubernetes-distribution":  &kubernetesDistributionFlag,
 	}
 
 	for flag, target := range flags {
@@ -70,25 +72,26 @@ func GetFlags(cmd *cobra.Command, cloudProvider string) (*types.CliFlags, error)
 
 	// Assign collected values to cliFlags
 	cliFlags = types.CliFlags{
-		AlertsEmail:          alertsEmailFlag,
-		CloudRegion:          cloudRegionFlag,
-		ClusterName:          cliFlags.ClusterName,
-		DNSProvider:          dnsProviderFlag,
-		SubDomainName:        subdomainFlag,
-		DomainName:           domainNameFlag,
-		GitProtocol:          gitProtocolFlag,
-		GitProvider:          gitProviderFlag,
-		GithubOrg:            githubOrgFlag,
-		GitlabGroup:          gitlabGroupFlag,
-		GitopsTemplateBranch: gitopsTemplateBranchFlag,
-		GitopsTemplateURL:    gitopsTemplateURLFlag,
-		UseTelemetry:         cliFlags.UseTelemetry,
-		CloudProvider:        cloudProvider,
-		NodeType:             nodeTypeFlag,
-		NodeCount:            nodeCountFlag,
-		InstallCatalogApps:   installCatalogAppsFlag,
-		InstallKubefirstPro:  installKubefirstProFlag,
-		AMIType:              cliFlags.AMIType,
+		AlertsEmail:            alertsEmailFlag,
+		CloudRegion:            cloudRegionFlag,
+		ClusterName:            cliFlags.ClusterName,
+		DNSProvider:            dnsProviderFlag,
+		SubDomainName:          subdomainFlag,
+		DomainName:             domainNameFlag,
+		GitProtocol:            gitProtocolFlag,
+		GitProvider:            gitProviderFlag,
+		GithubOrg:              githubOrgFlag,
+		GitlabGroup:            gitlabGroupFlag,
+		GitopsTemplateBranch:   gitopsTemplateBranchFlag,
+		GitopsTemplateURL:      gitopsTemplateURLFlag,
+		UseTelemetry:           cliFlags.UseTelemetry,
+		CloudProvider:          cloudProvider,
+		NodeType:               nodeTypeFlag,
+		NodeCount:              nodeCountFlag,
+		InstallCatalogApps:     installCatalogAppsFlag,
+		InstallKubefirstPro:    installKubefirstProFlag,
+		AMIType:                cliFlags.AMIType,
+		KubernetesDistribution: kubernetesDistributionFlag,
 	}
 
 	switch cloudProvider {

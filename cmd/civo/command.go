@@ -9,6 +9,7 @@ package civo
 import (
 	"fmt"
 
+	"github.com/spf13/cobra"
 	"github.com/wethegamers/kubefirst-api/pkg/constants"
 	"github.com/wethegamers/kubefirst/internal/catalog"
 	"github.com/wethegamers/kubefirst/internal/cluster"
@@ -16,7 +17,6 @@ import (
 	"github.com/wethegamers/kubefirst/internal/provision"
 	"github.com/wethegamers/kubefirst/internal/step"
 	"github.com/wethegamers/kubefirst/internal/utilities"
-	"github.com/spf13/cobra"
 )
 
 var (
@@ -130,6 +130,7 @@ func Create() *cobra.Command {
 	createCmd.Flags().String("install-catalog-apps", "", "Comma separated values to install after provision")
 	createCmd.Flags().Bool("use-telemetry", true, "Whether to emit telemetry")
 	createCmd.Flags().Bool("install-kubefirst-pro", true, "Whether or not to install Kubefirst Pro")
+	createCmd.Flags().String("kubernetes-distribution", "k3s", "The Kubernetes distribution to use - one of: [k3s, talos] (default: k3s)")
 
 	return createCmd
 }
