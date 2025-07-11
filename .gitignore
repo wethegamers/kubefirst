@@ -28,3 +28,5 @@ kubefirst.yaml
 __debug_*
 kubefirst
 launch.json
+./bin/kubefirst
+./kubefirst
